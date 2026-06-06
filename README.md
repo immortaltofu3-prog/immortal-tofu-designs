@@ -35,7 +35,7 @@ This portfolio highlights my current front-end work, including:
 
 ## Purpose
 
-This project was built as a personal portfolio and code sample to demonstrate my progress in front-end layout, UI styling, responsive design, and clean HTML/CSS structure.
+This project was built as a personal portfolio and code sample to demonstrate front-end layout, UI styling, responsive design, and clean HTML/CSS structure.
 
 ## Contact
 
