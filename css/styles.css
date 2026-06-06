@@ -92,7 +92,7 @@ a:focus-visible {
 h1{
   margin:0;
   font-weight:800;
-  font-size: clamp(2rem, 7vw, 4rem);;
+  font-size: clamp(2rem, 7vw, 4rem);
   text-transform:uppercase;
   letter-spacing:0.08em ;
 }
@@ -121,6 +121,12 @@ h1, h2 {
 
 #project-section, #contact{
   min-height: auto;
+}
+
+#welcome-section,
+#project-section,
+#contact {
+  scroll-margin-top: 90px;
 }
 
 #project-section > h2{
@@ -158,6 +164,11 @@ h1, h2 {
   transition: all 0.3s ease;
 }
 
+.project-tile:focus-visible {
+  outline: 3px solid var(--accent-color-text);
+  outline-offset: 4px;
+}
+
 #contact{
   display:flex;
   flex-direction:column;
@@ -189,15 +200,14 @@ h1, h2 {
   margin: 2rem 0 0;
 }
 
+.contact-list li {
+  transition: transform 0.3s ease;
+}
+
 .contact-list li > a{
   color:var(--main-text-color);
   font-size:1.2rem;
   font-weight:700;
-  transition: transform 0.3s ease;
-}
-
-.contact-list li:hover{
-  transform:scale(1.2);
 }
 
 #foot{
@@ -214,12 +224,18 @@ h1, h2 {
 }
 
 /*
-ADD/CHANGE MEDIA QUERIES 6/4
+ADD/CHANGED MEDIA QUERIES 6/4
 */
 
-@media (max-width: 768px) {
-  .project-grid {
-    grid-template-columns: 1fr;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
   }
 }
 
@@ -254,11 +270,16 @@ ADD/CHANGE MEDIA QUERIES 6/4
   .project-tile:hover h3 {
     color: var(--accent-color-text);
   }
+
+  .contact-list li:hover{
+    transform:scale(1.2);
+  } 
 }
 
-.project-tile:focus-visible {
-  outline: 3px solid var(--accent-color-text);
-  outline-offset: 4px;
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width:520px){
@@ -274,7 +295,7 @@ ADD/CHANGE MEDIA QUERIES 6/4
   }
 
   .navlist li > a {
-    font-size: 1rem;
+    font-size: 1.10rem;
   }
 
   #logo {
@@ -299,5 +320,19 @@ ADD/CHANGE MEDIA QUERIES 6/4
     align-items: center;
     gap: 1rem;
     padding: 1rem;
+    font-size: 1.3rem;
+  }
+
+  .contact-list li > a{
+    font-size: 1.4rem;
+  }
+
+  #foot {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  #foot p {
+    padding: 0;
   }
 }
