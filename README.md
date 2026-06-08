@@ -40,5 +40,7 @@ This project was built as a personal portfolio and code sample to demonstrate fr
 ## Contact
 
 Email: [immortaltofu3@gmail.com](mailto:immortaltofu3@gmail.com)
+
 GitHub: [https://github.com/immortaltofu3-prog](https://github.com/immortaltofu3-prog)
+
 Portfolio: [https://immortaltofu-personal-portfolio.netlify.app/](https://immortaltofu-personal-portfolio.netlify.app/)
