@@ -35,7 +35,7 @@ This portfolio highlights my current front-end work, including:
 
 ## Purpose
 
-This project was built as a personal portfolio and code sample to demonstrate front-end layout, UI styling, responsive design, and clean HTML/CSS structure.
+This project was built as a hybrid portfolio, code sample, and service hub for Immortal Tofu Designs. It showcases responsive HTML/CSS layout work, reusable UI sections, digital product examples, and simple front-end services such as CSS fixes, landing page cleanup, and template customization.
 
 ## Contact
 
