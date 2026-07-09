@@ -22,7 +22,7 @@
     <meta property="og:site_name" content="Immortal Tofu Designs">
   </head>
   <body>
-    <nav id="navbar">
+    <nav id="navbar" aria-label="Primary navigation">
       <img id="logo" src="./assets/immortalTofuLogo.png" alt="Immortal Tofu Logo">
       <ul class="navlist">
         <li>
@@ -35,10 +35,14 @@
           <a href="#services">Services</a>
         </li>
         <li>
+          <a href="#faq">FAQ</a>
+        </li>
+        <li>
           <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
+
     <main>
       <section id="welcome-section">
         <h1>Immortal Tofu</h1>
@@ -54,9 +58,9 @@
             <p>A collection of responsive, reusable front-end components including CTA buttons, landing page sections, and static web templates.</p>
             <span>View Project</span>
           </a>
-          <a href="https://github.com/immortaltofu3-prog/personalPortfolio" class="project-tile" target="_blank" rel="noopener noreferrer" aria-label="View code for this Personal Portfolio">
+          <a href="https://github.com/immortaltofu3-prog/personalPortfolio" class="project-tile" target="_blank" rel="noopener noreferrer" aria-label="View code for this Immortal Tofu Designs Portfolio">
             <h3>Portfolio Code Repository</h3>
-            <p>The source code for this responsive dark-theme portfolio, built with semantic HTML and custom CSS.</p>
+            <p>The source code for this responsive dark-theme hybrid portfolio and service hub, built with semantic HTML and custom CSS.</p>
             <span>View Code</span>
           </a>
         </div>
@@ -70,13 +74,11 @@
               <h3>Responsive CSS Fixes</h3>
               <p>Clean up mobile layout issues, spacing problems, alignment bugs, and responsive design issues.</p>
             </div>
-
             <div class="service-card">
               <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
               <h3>Landing Page Builds</h3>
               <p>Build simple, responsive landing pages using semantic HTML and custom CSS.</p>
             </div>
-
             <div class="service-card">
               <i class="fas fa-layer-group service-icon" aria-hidden="true"></i>
               <h3>UI Section Builds</h3>
@@ -84,8 +86,45 @@
             </div>
           </div>
           <p class="services-note">
-            * Project pricing available after scope review.
+            * Pricing available after scope review.
           </p>
+      </section>
+
+      <section id="faq">
+        <h2>FAQ</h2>
+        <div class="faq-list">
+          <details name="faq">
+            <summary>What kind of projects do you take on?</summary>
+            <p>
+              I focus on simple HTML/CSS projects, responsive layout fixes, landing page cleanup,
+              UI sections, and template customization.
+            </p>
+          </details>
+          <details name="faq">
+            <summary>Can you help fix a page I already have?</summary>
+            <p>
+              Yes. If you have an existing page, template, or layout that needs spacing fixes,
+              mobile adjustments, cleaner sections, or basic HTML/CSS edits, send over the link
+              or files and I can review the scope.
+            </p>
+          </details>
+          <details name="faq">
+            <summary>Can’t I just use AI to build a website?</summary>
+            <p>
+              AI tools can help create a first draft, but layouts still need cleanup,
+              responsive testing, structure, and human review before they feel ready to share.
+            </p>
+          </details>
+          <details name="faq">
+            <summary>How does pricing and payment work?</summary>
+            <p>
+              Projects, cleanups, and UI fixes are priced after a quick scope review. 
+              Send over the page link, files, screenshots, or a short description of what you need fixed. 
+              If the project is a good fit, I’ll confirm the scope and send a PayPal invoice before starting. 
+              Small projects may require full payment upfront, while larger projects may be split into milestones.
+            </p>
+          </details>
+        </div>
       </section>
 
       <section id="contact">
@@ -99,12 +138,10 @@
             <i class="fab fa-github icon github-icon" aria-hidden="true"></i>
             <a href="https://github.com/immortaltofu3-prog" id="profile-link" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
-
           <li>
             <i class="fas fa-store icon" aria-hidden="true"></i>
             <a href="https://immortaltofu.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad</a>
           </li>
-
           <li>
             <i class="fas fa-envelope icon email-icon" aria-hidden="true"></i>
             <a href="mailto:immortaltofu3@gmail.com">Email</a>
@@ -119,7 +156,14 @@
       </section>
 
       <footer id="foot">
-        <p>&copy; Immortal Tofu: 2026</p>
+        <div class="footer-inner">
+          <p>&copy; 2026 Immortal Tofu Designs</p>
+          <img
+            class="footer-logo"
+            src="./assets/immortalTofuLogo.png"
+            alt="Immortal Tofu Designs logo"
+          >
+        </div>
       </footer>
     </main>
   </body>

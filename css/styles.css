@@ -10,6 +10,7 @@
 
   --main-text-color: #f8fafc;
   --muted-text-color: #cbd5e1;
+  --card-body-text: #e2e8f0;
   --accent-color-text: #00f5d4;
   --soft-border: rgba(255, 255, 240, 0.18);
 }
@@ -52,7 +53,8 @@ a {
 
 a:focus-visible,
 .project-tile:focus-visible,
-.service-card:focus-within {
+.service-card:focus-within,
+.faq-list summary:focus-visible {
   outline: 3px solid var(--accent-color-text);
   outline-offset: 4px;
 }
@@ -138,6 +140,7 @@ h2 {
 #welcome-section,
 #project-section,
 #services,
+#faq,
 #contact {
   scroll-margin-top: 90px;
 }
@@ -183,13 +186,12 @@ h2 {
 
 #project-section > h2 {
   padding: 4rem 0 0.5rem;
-  text-transform: uppercase;
   border-bottom: 2px solid var(--muted-text-color);
   margin: 0 auto 2rem;
   width: fit-content;
   max-width: 90%;
   color: var(--main-text-color);
-  font-size: 1.6rem;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .project-grid {
@@ -197,6 +199,8 @@ h2 {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   padding: 0 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .project-tile {
@@ -301,7 +305,7 @@ h2 {
 }
 
 .service-card p {
-  color: var(--muted-text-color);
+  color: var(--card-body-text);
   line-height: 1.6;
 }
 
@@ -311,6 +315,62 @@ h2 {
   font-size: 0.95rem;
 }
 
+/* =========================
+   FAQ SECTION
+========================= */
+
+#faq {
+  background: var(--project-bg);
+  color: var(--main-text-color);
+  text-align: center;
+  border-bottom: 2.5px solid var(--soft-border);
+}
+
+#faq h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 2.5rem;
+  color: var(--main-text-color);
+}
+
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-list details {
+  background: var(--card-bg);
+  border: 1px solid var(--soft-border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  transition: 
+    border-color 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.faq-list details[open] {
+  border-color: rgba(0, 245, 212, 0.45);
+  box-shadow: 0 0 18px rgba(0, 245, 212, 0.10);
+}
+
+.faq-list summary {
+  cursor: pointer;
+  color: var(--main-text-color);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.faq-list summary::marker {
+  color: var(--accent-color-text);
+}
+
+.faq-list p {
+  color: var(--card-body-text);
+  line-height: 1.7;
+  margin: 1rem 0 0;
+}
 
 /* =========================
    CONTACT SECTION
@@ -332,7 +392,7 @@ h2 {
 #contact > h2 {
   position: relative;
   display: inline-block;
-  font-size: 2.3rem;
+  font-size: clamp(2rem, 5vw, 3rem);
 }
 
 #contact h2::after {
@@ -380,16 +440,26 @@ h2 {
 ========================= */
 
 #foot {
-  text-align: right;
-  padding-bottom: 2rem;
+  padding: 1.5rem 1rem;
   background: var(--main-bg);
   color: var(--main-text-color);
 }
 
 #foot p {
-  padding: 3rem 2rem 0 0;
   margin: 0;
   font-size: 0.9rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-logo {
+  height: 2rem;
+  width: auto;
 }
 
 
@@ -463,6 +533,11 @@ h2 {
     animation-play-state: paused;
   }
 
+  .faq-list details:hover {
+  border-color: rgba(0, 245, 212, 0.45);
+  background: #1f2937;
+  }
+
   .contact-list li:hover {
     transform: scale(1.2);
   }
@@ -506,22 +581,24 @@ h2 {
 @media (max-width: 520px) {
   #navbar {
     height: auto;
-    padding: 0.6rem 0.4rem;
+    padding: 0.55rem 0.35rem;
   }
 
   #logo {
-    height: 2.2rem;
-    margin: 0 0.4rem;
+    height: 1.7rem;
+    margin: 0 0.25rem;
   }
 
   .navlist {
-    justify-content: flex-end;
-    gap: 0.95rem;
-    padding: 0.6rem 0.4rem;
+    justify-content: center;
+    gap: clamp(0.45rem, 2.2vw, 0.85rem);
+    padding: 0.5rem 0.25rem;
+    min-width: 0;
   }
 
   .navlist li > a {
-    font-size: 1rem;
+    font-size: clamp(0.78rem, 2.7vw, 0.95rem);
+    white-space: nowrap;
   }
 
   section {
@@ -544,6 +621,19 @@ h2 {
     padding: 1.5rem;
   }
 
+  #faq h2 {
+    font-size: 2rem;
+  }
+
+  .faq-list details {
+    padding: 1rem;
+  }
+
+  .faq-list summary,
+  .faq-list p {
+    font-size: 0.95rem;
+  }
+
   .contact-list {
     flex-direction: column;
     align-items: center;
@@ -557,11 +647,22 @@ h2 {
 
   #foot {
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem 2rem;
   }
 
   #foot p {
     padding: 0;
+  }
+
+  .footer-inner {
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+  }
+
+  .footer-logo {
+  height: 2.4rem;
   }
 }
 
@@ -572,22 +673,21 @@ h2 {
 
 @media (max-width: 420px) {
   #navbar {
-    padding: 0.45rem 0.35rem;
+    padding: 0.45rem 0.25rem;
   }
 
   #logo {
-    display: block;
-    height: 1.5rem;
-    margin-right: 0.25rem;
+    display: none;
   }
 
   .navlist {
+    width: 100%;
     justify-content: center;
-    gap: 0.85rem;
-    padding: 0.5rem 0.25rem;
+    gap: clamp(0.6rem, 3.2vw, 1rem);
+    padding: 0.45rem 0.1rem;
   }
 
   .navlist li > a {
-    font-size: 0.90rem;
+    font-size: clamp(0.76rem, 3vw, 0.85rem);
   }
 }

@@ -1,10 +1,10 @@
-# Immortal Tofu Portfolio
+# Immortal Tofu Designs Landing Hub
 
-A responsive dark-theme portfolio landing page built with semantic HTML and custom CSS.
+A responsive dark-theme hybrid portfolio, code sample, and service hub built with semantic HTML and custom CSS.
 
 ## Overview
 
-This portfolio showcases my front-end layout work, modular HTML/CSS projects, and contact links for freelance or project-based work. The design focuses on clean structure, mobile-friendly responsiveness, accessible navigation, and a simple dark UI style.
+This site showcases my front-end layout work, modular HTML/CSS projects, Gumroad digital product examples, and simple service offerings through Immortal Tofu Designs. The design focuses on clean structure, mobile-friendly responsiveness, accessible navigation, native HTML FAQ behavior, and a simple dark UI style.
 
 ## Built With
 
@@ -12,6 +12,7 @@ This portfolio showcases my front-end layout work, modular HTML/CSS projects, an
 * CSS3
 * Responsive layout techniques
 * CSS custom properties
+* Native HTML `<details>` / `<summary>` FAQ
 * Font Awesome icons
 
 ## Features
@@ -19,19 +20,21 @@ This portfolio showcases my front-end layout work, modular HTML/CSS projects, an
 * Responsive navigation
 * Dark theme design
 * Featured project cards
-* Contact section with external links
+* Services section
+* Native HTML/CSS FAQ section
+* Contact section with GitHub, Gumroad, and email links
 * Keyboard focus styles
 * Reduced-motion accessibility support
 * Mobile-friendly layout
 
 ## Featured Work
 
-This portfolio highlights my current front-end work, including:
+This landing hub highlights my current front-end work, including:
 
 * Modular HTML/CSS digital product system
 * Responsive landing page layouts
 * Reusable UI components
-* Personal portfolio landing page
+* Hybrid portfolio and service hub
 
 ## Purpose
 
@@ -39,8 +42,11 @@ This project was built as a hybrid portfolio, code sample, and service hub for I
 
 ## Contact
 
+
 Email: [immortaltofu3@gmail.com](mailto:immortaltofu3@gmail.com)
 
 GitHub: [https://github.com/immortaltofu3-prog](https://github.com/immortaltofu3-prog)
 
 Portfolio: [https://immortaltofu-designs.netlify.app](https://immortaltofu-designs.netlify.app)
+
+Gumroad: [https://immortaltofu.gumroad.com](https://immortaltofu.gumroad.com)
