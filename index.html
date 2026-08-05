@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./assets/immortalTofuLogo.png">
-    <title>Immortal Tofu Designs | HTML/CSS Layout & UI Services</title>
+    <title>Immortal Tofu Designs | HTML/CSS Layout &amp; UI Services</title>
     <meta
       name="description"
       content="Immortal Tofu Designs builds responsive HTML/CSS layouts, simple landing pages, modular UI sections, and mobile-friendly front-end fixes for creators and small projects."
     >
     <!-- Open Graph / Social Preview -->
-    <meta property="og:title" content="Immortal Tofu Designs | HTML/CSS Layout & UI Services">
+    <meta property="og:title" content="Immortal Tofu Designs | HTML/CSS Layout &amp; UI Services">
     <meta
       property="og:description"
       content="Responsive HTML/CSS layouts, simple landing pages, modular UI sections, and mobile-friendly front-end fixes."
@@ -22,149 +22,647 @@
     <meta property="og:site_name" content="Immortal Tofu Designs">
   </head>
   <body>
-    <nav id="navbar" aria-label="Primary navigation">
-      <img id="logo" src="./assets/immortalTofuLogo.png" alt="Immortal Tofu Logo">
-      <ul class="navlist">
-        <li>
-          <a href="#welcome-section">About</a>
-        </li>
-        <li>
-          <a href="#project-section">Work</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#faq">FAQ</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
+    <!-- Primary navigation -->
+    <nav id="site-nav" aria-label="Primary navigation">
+      <div class="nav-inner container">
+        <a class="nav-logo" href="#top" aria-label="Immortal Tofu Designs — back to top">
+          <img src="./assets/immortalTofuLogo.png" alt="">
+        </a>
+        <ul class="nav-list">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="nav-cta" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <main>
-      <section id="welcome-section">
-        <h1>Immortal Tofu</h1>
-        <p>Front-End Layout &amp; UI Developer</p>
-        <p>I build responsive HTML/CSS layouts, modular UI components, and simple landing pages with a focus on clean structure, usability, and mobile-friendly design.</p>
-      </section>
-
-      <section id="project-section">
-        <h2>Featured Work</h2>
-        <div class="project-grid">
-          <a href="https://immortaltofu-webkits.netlify.app" class="project-tile" target="_blank" rel="noopener noreferrer" aria-label="View Modular HTML CSS Digital Product System project">
-            <h3>Modular HTML/CSS Digital Product System</h3>
-            <p>A collection of responsive, reusable front-end components including CTA buttons, landing page sections, and static web templates.</p>
-            <span>View Project</span>
-          </a>
-          <a href="https://github.com/immortaltofu3-prog/personalPortfolio" class="project-tile" target="_blank" rel="noopener noreferrer" aria-label="View code for this Immortal Tofu Designs Portfolio">
-            <h3>Portfolio Code Repository</h3>
-            <p>The source code for this responsive dark-theme hybrid portfolio and service hub, built with semantic HTML and custom CSS.</p>
-            <span>View Code</span>
-          </a>
-        </div>
-      </section>
-
-      <section id="services">
-          <h2>Services</h2>
-          <div class="service-grid">
-            <div class="service-card">
-              <i class="fas fa-code service-icon" aria-hidden="true"></i>
-              <h3>Responsive CSS Fixes</h3>
-              <p>Clean up mobile layout issues, spacing problems, alignment bugs, and responsive design issues.</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-laptop-code service-icon" aria-hidden="true"></i>
-              <h3>Landing Page Builds</h3>
-              <p>Build simple, responsive landing pages using semantic HTML and custom CSS.</p>
-            </div>
-            <div class="service-card">
-              <i class="fas fa-layer-group service-icon" aria-hidden="true"></i>
-              <h3>UI Section Builds</h3>
-              <p>Create reusable hero sections, CTA sections, FAQs, testimonials, and product sections.</p>
-            </div>
-          </div>
-          <p class="services-note">
-            * Pricing available after scope review.
+    <main id="top">
+      <!-- Hero -->
+      <section id="hero" aria-labelledby="hero-heading">
+        <div class="container">
+          <p class="hero-eyebrow">IMMORTAL TOFU DESIGNS</p>
+          <h1 id="hero-heading">Clean, responsive websites for small businesses.</h1>
+          <p class="hero-intro">
+            Immortal Tofu Designs builds straightforward HTML/CSS websites, customizes proven
+            templates, and fixes front-end problems so your site looks professional and works
+            across devices.
           </p>
-      </section>
-
-      <section id="faq">
-        <h2>FAQ</h2>
-        <div class="faq-list">
-          <details name="faq">
-            <summary>What kind of projects do you take on?</summary>
-            <p>
-              I focus on simple HTML/CSS projects, responsive layout fixes, landing page cleanup,
-              UI sections, and template customization.
-            </p>
-          </details>
-          <details name="faq">
-            <summary>Can you help fix a page I already have?</summary>
-            <p>
-              Yes. If you have an existing page, template, or layout that needs spacing fixes,
-              mobile adjustments, cleaner sections, or basic HTML/CSS edits, send over the link
-              or files and I can review the scope.
-            </p>
-          </details>
-          <details name="faq">
-            <summary>Can’t I just use AI to build a website?</summary>
-            <p>
-              AI tools can help create a first draft, but layouts still need cleanup,
-              responsive testing, structure, and human review before they feel ready to share.
-            </p>
-          </details>
-          <details name="faq">
-            <summary>How does pricing and payment work?</summary>
-            <p>
-              Projects, cleanups, and UI fixes are priced after a quick scope review. 
-              Send over the page link, files, screenshots, or a short description of what you need fixed. 
-              If the project is a good fit, I’ll confirm the scope and send a PayPal invoice before starting. 
-              Small projects may require full payment upfront, while larger projects may be split into milestones.
-            </p>
-          </details>
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">View Services &amp; Pricing</a>
+            <a href="#contact" class="btn btn-secondary">Request a Scope Review</a>
+          </div>
+          <p class="hero-trust">Clear scope. Transparent pricing. No surprise charges.</p>
         </div>
       </section>
 
-      <section id="contact">
-        <h2>Ready to make it cleaner?</h2>
-        <p>
-          Browse my HTML/CSS templates on Gumroad, or reach out if you need help customizing a layout,
-          fixing a page, or building something simple from scratch.
-        </p>
-        <ul class="contact-list">
-          <li>
-            <i class="fab fa-github icon github-icon" aria-hidden="true"></i>
-            <a href="https://github.com/immortaltofu3-prog" id="profile-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </li>
-          <li>
-            <i class="fas fa-store icon" aria-hidden="true"></i>
-            <a href="https://immortaltofu.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad</a>
-          </li>
-          <li>
-            <i class="fas fa-envelope icon email-icon" aria-hidden="true"></i>
-            <a href="mailto:immortaltofu3@gmail.com">Email</a>
-          </li>
-          <!--
-          <li>
-            <i class="fab fa-instagram" aria-hidden="true"></i>
-            <a href="INSTAGRAM_LINK" target="_blank" rel="noopener noreferrer">Instagram</a>
-          </li>
-          -->
-        </ul>
+      <!-- Value strip -->
+      <section id="value-strip" aria-label="Why Immortal Tofu Designs">
+        <div class="container">
+          <ul class="value-list">
+            <li class="value-item">Responsive by default</li>
+            <li class="value-item">SEO-ready foundation</li>
+            <li class="value-item">Lightweight HTML/CSS</li>
+            <li class="value-item">Clear pricing</li>
+            <li class="value-item">Optional ongoing care</li>
+          </ul>
+        </div>
       </section>
 
-      <footer id="foot">
-        <div class="footer-inner">
-          <p>&copy; 2026 Immortal Tofu Designs</p>
-          <img
-            class="footer-logo"
-            src="./assets/immortalTofuLogo.png"
-            alt="Immortal Tofu Designs logo"
-          >
+      <!-- Services and Pricing -->
+      <section id="services" aria-labelledby="services-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="services-heading">Choose the right starting point.</h2>
+            <p class="section-intro">
+              Every website is built to be responsive, easy to navigate, and ready for search
+              engines. Fixed prices apply to the scope listed. Larger projects receive a written
+              quote before work begins.
+            </p>
+          </header>
+
+          <!-- Website packages -->
+          <div class="package-grid">
+            <article class="package-card">
+              <header class="package-header">
+                <h3>Template Launch</h3>
+                <p class="package-price"><span class="price-amount">$200</span></p>
+              </header>
+              <p class="package-shared-desc">
+                A clean, responsive HTML/CSS website with an SEO-ready foundation.
+              </p>
+              <p class="package-desc">
+                Launch faster with an existing Immortal Tofu layout customized for your brand.
+              </p>
+              <ul class="package-features">
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Responsive design</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>SEO-ready foundation</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Approved content, colors, logo, and images</span>
+                </li>
+                <li class="feature-row feature-row--excluded">
+                  <span class="feature-status" aria-hidden="true">✕</span>
+                  <span class="visually-hidden">Not included:</span>
+                  <span>Fully custom layout</span>
+                </li>
+                <li class="feature-row feature-row--excluded">
+                  <span class="feature-status" aria-hidden="true">✕</span>
+                  <span class="visually-hidden">Not included:</span>
+                  <span>Multiple pages</span>
+                </li>
+                <li class="feature-row feature-row--excluded">
+                  <span class="feature-status" aria-hidden="true">✕</span>
+                  <span class="visually-hidden">Not included:</span>
+                  <span>Analytics or integrations</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>One revision round</span>
+                </li>
+              </ul>
+              <p class="package-note">Optional modular sections are quoted separately.</p>
+              <a href="#contact" class="btn btn-secondary package-cta">Request a Template Launch</a>
+            </article>
+
+            <article class="package-card package-card--featured">
+              <p class="package-badge">Most Popular</p>
+              <header class="package-header">
+                <h3>Custom One-Page Website</h3>
+                <p class="package-price"><span class="price-amount">$300</span></p>
+              </header>
+              <p class="package-shared-desc">
+                A clean, responsive HTML/CSS website with an SEO-ready foundation.
+              </p>
+              <p class="package-desc">
+                A custom one-page layout built around your business, content, and primary goal.
+              </p>
+              <ul class="package-features">
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Responsive design</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>SEO-ready foundation</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Approved content, colors, logo, and images</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Fully custom one-page layout</span>
+                </li>
+                <li class="feature-row feature-row--excluded">
+                  <span class="feature-status" aria-hidden="true">✕</span>
+                  <span class="visually-hidden">Not included:</span>
+                  <span>Multiple pages</span>
+                </li>
+                <li class="feature-row feature-row--excluded">
+                  <span class="feature-status" aria-hidden="true">✕</span>
+                  <span class="visually-hidden">Not included:</span>
+                  <span>Analytics or integrations</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Two revision rounds</span>
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary package-cta">Request a Custom Website</a>
+            </article>
+
+            <article class="package-card">
+              <header class="package-header">
+                <h3>Custom Business Website</h3>
+                <p class="package-price"><span class="price-amount">Custom quote</span></p>
+                <p class="price-note">Most projects: $600–$3,000+</p>
+              </header>
+              <p class="package-shared-desc">
+                A clean, responsive HTML/CSS website with an SEO-ready foundation.
+              </p>
+              <p class="package-desc">
+                A larger website built around the pages, layouts, and approved features your
+                business needs.
+              </p>
+              <ul class="package-features">
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Responsive design</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>SEO-ready foundation</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Approved content, colors, logo, and images</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Custom page layouts</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Multiple pages</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Analytics or integrations when selected</span>
+                </li>
+                <li class="feature-row feature-row--included">
+                  <span class="feature-status" aria-hidden="true">✓</span>
+                  <span class="visually-hidden">Included:</span>
+                  <span>Two revision rounds</span>
+                </li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary package-cta">Request a Business Website Quote</a>
+            </article>
+          </div>
+
+          <p class="pricing-note">
+            Package prices apply to the scope shown. Additional pages, modular sections, content
+            work, analytics, integrations, or features are itemized and approved before work
+            begins. You will never receive an unapproved surprise charge.
+          </p>
+
+          <div class="services-value-statement">
+            <p><strong>Lightweight by design.</strong> Custom HTML/CSS keeps straightforward business sites focused, fast, and easier to maintain without unnecessary plugins or complex software.</p>
+          </div>
+
+          <!-- Website Fix & Polish -->
+          <section class="fix-callout" aria-labelledby="fix-heading">
+            <h3 id="fix-heading">Already have a website that needs help?</h3>
+            <p>
+              I can review and repair mobile layout problems, awkward spacing, text overflow,
+              broken navigation, unclear buttons, and other HTML/CSS issues without rebuilding
+              your entire website.
+            </p>
+            <p class="fix-price">Starting at <strong>$100</strong></p>
+            <p class="fix-note">
+              The final price depends on the number of pages, the number of issues, and the
+              complexity of the repair. Broader mobile-responsiveness projects may cost $200 or
+              more after review.
+            </p>
+            <a href="#contact" class="btn btn-secondary">Send Your Website for Review</a>
+          </section>
+
+          <!-- Post-launch care plans -->
+          <div class="care-plans">
+            <h3 class="care-plans-heading">Keep your website handled after launch.</h3>
+            <p class="care-plans-intro">
+              Monthly care is optional and begins after your website is complete and fully paid.
+              Choose managed care or receive the completed website through a standard handoff with
+              no required monthly fee.
+            </p>
+            <div class="care-grid">
+              <article class="care-card">
+                <header class="care-header">
+                  <h4>Site Care</h4>
+                  <p class="care-price"><span class="price-amount">$99/month</span></p>
+                </header>
+                <p class="care-desc">
+                  Hosting support, update time, and technical help for businesses that do not want
+                  to manage the website themselves.
+                </p>
+                <ul class="care-features">
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Managed hosting and deployment</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Domain and SSL checks</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Version-history backup</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Basic link and site-function checks</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Up to one hour of simple content updates</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Technical support if the deployed site stops working</span>
+                  </li>
+                  <li class="feature-row feature-row--excluded">
+                    <span class="feature-status" aria-hidden="true">✕</span>
+                    <span class="visually-hidden">Not included:</span>
+                    <span>New pages or major redesigns</span>
+                  </li>
+                  <li class="feature-row feature-row--excluded">
+                    <span class="feature-status" aria-hidden="true">✕</span>
+                    <span class="visually-hidden">Not included:</span>
+                    <span>Analytics reporting</span>
+                  </li>
+                </ul>
+              </article>
+
+              <article class="care-card">
+                <header class="care-header">
+                  <h4>Growth Care</h4>
+                  <p class="care-price"><span class="price-amount">$179/month</span></p>
+                </header>
+                <p class="care-desc">
+                  More update time and regular review for businesses that expect ongoing website
+                  changes.
+                </p>
+                <ul class="care-features">
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Everything in Site Care</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Up to two hours of content or layout updates</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Basic monthly analytics snapshot once configured</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Verification that tracked actions still work</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Priority response</span>
+                  </li>
+                  <li class="feature-row feature-row--included">
+                    <span class="feature-status" aria-hidden="true">✓</span>
+                    <span class="visually-hidden">Included:</span>
+                    <span>Quarterly website review</span>
+                  </li>
+                  <li class="feature-row feature-row--excluded">
+                    <span class="feature-status" aria-hidden="true">✕</span>
+                    <span class="visually-hidden">Not included:</span>
+                    <span>New pages or major redesigns</span>
+                  </li>
+                  <li class="feature-row feature-row--excluded">
+                    <span class="feature-status" aria-hidden="true">✕</span>
+                    <span class="visually-hidden">Not included:</span>
+                    <span>New integrations or custom features</span>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <p class="care-note">
+              Update time is tracked in 15-minute increments and does not roll over. New pages,
+              redesigns, integrations, and work beyond the included time receive a separate quote.
+              Care plans are available for websites I built or reviewed and approved.
+            </p>
+          </div>
+
+          <!-- Shared website foundation -->
+          <div class="shared-foundation" aria-labelledby="foundation-heading">
+            <h3 id="foundation-heading">A solid foundation comes standard.</h3>
+            <p class="foundation-intro">
+              Basic website quality should not be treated as an expensive upgrade. Every new
+              Immortal Tofu website includes:
+            </p>
+            <ul class="foundation-list">
+              <li>Responsive desktop, tablet, and mobile design</li>
+              <li>Semantic HTML and organized page structure</li>
+              <li>SEO-ready titles, descriptions, headings, and image text</li>
+              <li>Basic accessibility and readability review</li>
+              <li>Performance-minded HTML/CSS</li>
+              <li>Clear written scope and approved pricing</li>
+              <li>Standard deployment or file handoff</li>
+              <li>Client ownership after final payment</li>
+            </ul>
+            <p class="foundation-note">
+              An SEO-ready foundation helps search engines understand the website, but no specific
+              search ranking can be guaranteed.
+            </p>
+          </div>
         </div>
-      </footer>
+      </section>
+
+      <!-- Featured Work -->
+      <section id="work" aria-labelledby="work-heading">
+        <div class="container">
+          <header class="section-header">
+            <h2 id="work-heading">Practical websites and reusable tools.</h2>
+            <p class="section-intro">
+              Immortal Tofu Designs combines custom service work with responsive HTML/CSS products
+              built for straightforward use and customization.
+            </p>
+          </header>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>Immortal Tofu Designs</h3>
+              <p>
+                The responsive service and product hub you are viewing, built with semantic HTML,
+                custom CSS, and a performance-focused structure.
+              </p>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Responsive Design</li>
+                <li>Accessibility</li>
+              </ul>
+              <div class="project-actions">
+                <!-- TODO: Verify repository URL — currently points to personalPortfolio repo name -->
+                <a
+                  href="https://github.com/immortaltofu3-prog/personalPortfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >View Code</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <h3>Modular HTML/CSS Product System</h3>
+              <p>
+                A growing collection of responsive website templates, CTA sections, FAQs, buttons,
+                and reusable components designed for easy customization.
+              </p>
+              <ul class="project-tags">
+                <li>Templates</li>
+                <li>Components</li>
+                <li>Documentation</li>
+                <li>Responsive CSS</li>
+              </ul>
+              <div class="project-actions">
+                <a
+                  href="https://immortaltofu-webkits.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >View Website Products</a>
+                <a
+                  href="https://immortaltofu.gumroad.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >View Gumroad Store</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section id="process" aria-labelledby="process-heading">
+        <div class="container">
+          <h2 id="process-heading">A clear process from scope to launch.</h2>
+          <ol class="process-steps">
+            <li class="process-step">
+              <h3>Share your business and project</h3>
+              <p>
+                Email your current website link if you have one, what your business does, what you
+                need built or fixed, any required content or features, and examples you want
+                considered.
+              </p>
+            </li>
+            <li class="process-step">
+              <h3>Receive a scope and design direction</h3>
+              <p>
+                I review your details and provide a written scope covering the site structure,
+                design direction, price, revisions, payment schedule, and expected delivery based
+                on the project scope and my availability.
+              </p>
+            </li>
+            <li class="process-step">
+              <h3>Invoice and build</h3>
+              <p>
+                After the Stripe invoice or deposit is paid, work begins. You receive a review
+                version and the included revision rounds.
+              </p>
+            </li>
+            <li class="process-step">
+              <h3>Launch or handoff</h3>
+              <p>
+                After final approval and payment, your website is launched, transferred to you, or
+                placed on an optional monthly care plan.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" aria-labelledby="faq-heading">
+        <div class="container">
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+          <div class="faq-list">
+            <details name="faq">
+              <summary>Which website package is right for me?</summary>
+              <p>
+                The Template Launch is for businesses that want an existing Immortal Tofu layout
+                customized with their content and branding. The Custom One-Page Website provides a
+                new layout built around one primary business goal. The Custom Business Website is
+                for multiple pages, unique layouts, analytics, integrations, or more involved
+                requirements.
+              </p>
+              <p>
+                I will confirm the appropriate package during the scope review before you receive
+                an invoice.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>How is a Custom Business Website priced?</summary>
+              <p>
+                Custom business websites generally range from $600 to $3,000 or more. The final
+                price depends on the number of pages, unique layouts, content requirements,
+                approved integrations, analytics, and launch support.
+              </p>
+              <p>
+                You receive a written scope and confirmed price before work begins. Any additions
+                requested later are quoted and approved separately.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>Is SEO included?</summary>
+              <p>
+                Every new website includes an SEO-ready foundation with semantic HTML, logical
+                headings, page titles and descriptions, descriptive image text, mobile
+                responsiveness, and performance-minded code.
+              </p>
+              <p>
+                This helps search engines understand the website, but no specific search position
+                or ranking can be guaranteed.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>Can you fix my existing website?</summary>
+              <p>
+                Yes. Website Fix &amp; Polish begins at $100 and may include mobile-layout
+                problems, spacing, overflow, navigation, buttons, readability, or other HTML/CSS
+                issues.
+              </p>
+              <p>
+                Send the live website link and a description of the problem. Broader
+                mobile-responsiveness or multi-page repairs are priced after review.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>Why use custom HTML/CSS instead of WordPress or another builder?</summary>
+              <p>
+                Website builders and content-management systems can be useful for frequent
+                self-publishing, advanced e-commerce, or complex content needs. They may also
+                introduce plugins, themes, databases, dashboards, and recurring updates that require
+                additional maintenance.
+              </p>
+              <p>
+                For straightforward business websites, custom HTML/CSS offers a lighter structure
+                with fewer moving parts, fewer compatibility conflicts, and less unnecessary code. I
+                recommend the simplest platform that genuinely fits the project.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>Do you offer hosting and ongoing updates?</summary>
+              <p>
+                Yes. Monthly care is optional and begins after the website build is completed and
+                fully paid. Care plans provide managed hosting, technical support, routine checks,
+                and a defined amount of update time.
+              </p>
+              <p>
+                Care plans begin with a three-month commitment and continue month to month
+                afterward. Clients who do not need ongoing care can receive a standard website
+                handoff with no required monthly payment.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>How do payments and ownership work?</summary>
+              <p>
+                After the scope is approved, you receive a Stripe invoice. Small repairs are
+                generally paid upfront. Website builds use a deposit and final payment, while larger
+                projects may use milestone payments.
+              </p>
+              <p>
+                The client owns the completed website after the agreed balance is paid. The client
+                should also own the domain, even when Immortal Tofu Designs manages the technical
+                setup.
+              </p>
+            </details>
+            <details name="faq">
+              <summary>What do I need to provide?</summary>
+              <p>
+                Provide the core facts about your business, required content, services, contact
+                information, logo, brand colors, available images, and any examples you want
+                considered.
+              </p>
+              <p>
+                I organize the page structure and can help shape or lightly refine the wording
+                within the approved scope. You review and approve all final content before launch.
+                Extensive copywriting, research, or brand strategy may require a separate quote.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">Tell me what your website needs.</h2>
+          <p>
+            Send your current website link if you have one, what your business does, what you want
+            built or fixed, any required content or features, and examples you want considered. I
+            will review the project and reply with the recommended service, estimated scope, and
+            next steps.
+          </p>
+          <a href="mailto:immortaltofu3@gmail.com" class="btn btn-primary contact-email-cta">Request a Scope Review</a>
+          <p class="contact-note">No payment is due until the project scope and pricing are confirmed.</p>
+          <ul class="contact-list">
+            <li>
+              <i class="fab fa-github icon github-icon" aria-hidden="true"></i>
+              <a href="https://github.com/immortaltofu3-prog" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li>
+              <i class="fas fa-store icon" aria-hidden="true"></i>
+              <a href="https://immortaltofu.gumroad.com" target="_blank" rel="noopener noreferrer">Gumroad</a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container footer-inner">
+        <p>Built by Immortal Tofu Designs &copy; 2026</p>
+        <img
+          class="footer-logo"
+          src="./assets/immortalTofuLogo.png"
+          alt="Immortal Tofu Designs logo"
+        >
+      </div>
+    </footer>
   </body>
 </html>
